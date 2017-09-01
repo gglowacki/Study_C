@@ -46,5 +46,7 @@ int main(void)
 {
     // printf("%f \n", average(2, 3, '!'));
     isLetter('c','f','f','f','a', 'X', 'Z', 0)?printf("Is a letter"):printf("Isn't a letter");
+    isLetter('Z', 0)?printf("Is a letter"):printf("Isn't a letter");
+    isLetter('Z', '-', 'p' , 0)?printf("Is a letter"):printf("Isn't a letter");
     printf("\n");
 }
