@@ -26,9 +26,10 @@ int isLetter(char values, ...)
     int isLetter = 1;
     va_start(list, values);
 
-    /*how to determine if va_list have no more valid 
-      /values in other (better?) way??? 
-      */
+    /*
+     how to determine if va_list have no more valid 
+     values in other (better?) way??? 
+    */
     while(values != 0)
     {
         printf("%c ", values);
@@ -46,5 +47,7 @@ int main(void)
 {
     // printf("%f \n", average(2, 3, '!'));
     isLetter('c','f','f','f','a', 'X', 'Z', 0)?printf("Is a letter"):printf("Isn't a letter");
+    isLetter('Z', 0)?printf("Is a letter"):printf("Isn't a letter");
+    isLetter('Z', '-', 'p' , 0)?printf("Is a letter"):printf("Isn't a letter");
     printf("\n");
 }
